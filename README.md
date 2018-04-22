@@ -7,7 +7,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 * Localized PathLinker was tested on Python 2.7.9 and requires the following python package(s):
   - NetworkX 1.9.1.
   
-* The proteins localization information is needed. Download the "Integrated protein-protein interaction dataset" for the "H. sapiens" with "All Localizations" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>.
+* The proteins localization information is needed. Download the "Integrated protein-protein interaction dataset" for the "H. sapiens" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>.
 
 ## Input Files
 * NETWORK - A tab-delimited file with one directed interaction per line. Each line should have 3 columns: tail, head, and weight. Edges are directed from tail to head. This represents the interactome. The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt".
