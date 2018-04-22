@@ -26,7 +26,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Toy Example
 * Assuming your current working directory has the path "Localized_PathLinker", run the following command to apply the "LocPL" technique for the Alpha6Beta4Integrin pathway.
 
-python2.7 /Localized_PathLinker/Loc_PL_run.py -k 20000 -o /Localized_PathLinker/Alpha6Beta4Integrin --write-paths /Localized_PathLinker/2018-03-12-human-ppi-weighted-cap0_75.txt /Localized_PathLinker/Alpha6Beta4Integrin-nodes.txt /Localized_PathLinker/comppi.txt /Localized_PathLinker/Protein_Localization_Scores.txt
+python2.7  /Localized_PathLinker/Loc_PL_run.py  -k  20000  -o  /Localized_PathLinker/Alpha6Beta4Integrin  --write-paths  /Localized_PathLinker/2018-03-12-human-ppi-weighted-cap0_75.txt  /Localized_PathLinker/Alpha6Beta4Integrin-nodes.txt  /Localized_PathLinker/comppi.txt  /Localized_PathLinker/Protein_Localization_Scores.txt
 
 ## References
 
