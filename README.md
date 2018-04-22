@@ -1,7 +1,7 @@
 # localized-pathlinker
 Integrating Protein Localization with Automated Signaling Pathway Reconstruction.
 
-For a signaling pathway of interest, this method identifies paths that connect pathway-specific receptors to pathway-specific transcriptional regulators within a weighted protein-protein interactome. We incorporate information about the cellular localization of the interacting proteins to ensure that the individual proteins are localized in cellular compartments involved in signaling transduction and that the protein-protein interactions are spatially coherent with the signaling flow. We model signaling to start at a membrane-bound protein receptor and to be transmitted downstream via a succession of protein-protein interactions within the cytosol to end at a transcription regulator inside the nucleus.
+For a signaling pathway of interest, this method identifies paths that connect pathway-specific receptors to pathway-specific transcriptional regulators (TRs) within a weighted protein-protein interactome. We incorporate information about the cellular localization of the interacting proteins to ensure that the individual proteins are localized in cellular compartments involved in signaling transduction and that the protein-protein interactions are spatially coherent with the signaling flow. We model signaling to start at a membrane-bound protein receptor and to be transmitted downstream via a succession of protein-protein interactions within the cytosol to end at a transcription regulator inside the nucleus.
 
 ## Installation Instructions
 * Localized PathLinker was tested on Python 2.7.9 and requires the following python package(s):
