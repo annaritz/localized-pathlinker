@@ -21,7 +21,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Output Files
 * Pathway_paths - A tab-delimited file for the ranked k-shortest paths produced by PathLinker with ties broken. Each path will have two scores: a reconstruction score and a signaling score. Paths with tied reconstruction scores will be re-prioritized by the signaling score.
 
-* Pathway_randked_edges - A tab-delimiteed file for the edges within the reconstructed paths. Each edge will be given the order of the path within which it appeared for the first time.
+* Pathway_ranked_edges - A tab-delimiteed file for the edges within the reconstructed paths. Each edge will be given the order of the path within which it appeared for the first time.
 
 ## Toy Example
 * Assuming your current working directory has the path "Localized_PathLinker", run the following command to apply the "LocPL" technique for the Alpha6Beta4Integrin pathway.
