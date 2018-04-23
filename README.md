@@ -6,6 +6,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Installation Instructions
 * Localized PathLinker was tested on Python 2.7.9 and requires the following python package(s):
   - NetworkX 1.9.1.
+  - PathLinker.
   
 * The proteins localization information is needed. Download the "Integrated protein-protein interaction dataset" for the "H. sapiens" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>.
 
