@@ -6,10 +6,9 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Installation Instructions
 * Localized PathLinker was tested on Python 2.7.9 and requires the following python package(s):
   - <a href="https://networkx.github.io/">NetworkX 1.9.1</a>.
-  - <a href="https://github.com/Murali-group/PathLinker">PathLinker</a>.
+  - <a href="https://github.com/Murali-group/PathLinker">PathLinker</a>. Add PathLinker to your environment PATH variable or copy it to your current working directory.
 
- (ARCOMMENT: does PL need to be added to the environment PATH variable?  HOw does this version know where PL is?  Or is it installed via a package manager?)
-
+ 
 ## Input Files
 
 These files are positional arguments (the order matters). (ARCOMMENT: this is true right?)
