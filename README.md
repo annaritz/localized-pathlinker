@@ -22,15 +22,14 @@ These files are positional arguments (the order matters).
 
 ## Other Arguments
 
-These arguments may be specified in any order. (ARCOMMENT: note if they are optional or required.)
+These optional arguments may be specified in any order.
 
-* -k 
+* -k: number of computed paths. Default is 100 paths.
 
-* -o
+* -o: name to proceed output files. Default is 'out'.
 
-* --write-paths
+* --write-paths: If given, the computed paths are saved in a file, in addition to the ranked edges.
 
-(ARCOMMENT: when you run Loc_PL_run.py -h, you should get a help menu. This can also be used here.)
 
 ## Output Files
 * Pathway_paths - A tab-delimited file for the ranked k-shortest paths produced by PathLinker with ties broken. Each path will have two scores: a reconstruction score and a signaling score. Paths with tied reconstruction scores will be re-prioritized by the signaling score.
