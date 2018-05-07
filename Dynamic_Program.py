@@ -15,14 +15,12 @@ def Read_Localizatin_Scores(file):
             continue
         items = line.rstrip().split('\t')
         protein = items[0]
-        line = NODE_LOC_SCORES_file.readline()
-        items = line.rstrip().split('\t')
         Nodes_Loc_Score[protein] = {}
-        Nodes_Loc_Score[protein]['1'] = max(float(items[2]), 0.01)
+        Nodes_Loc_Score[protein]['1'] = max(float(items[1]), 0.01)
         Nodes_Loc_Score[protein]['1'] = -log(Nodes_Loc_Score[protein]['1'])
-        Nodes_Loc_Score[protein]['t'] = max(float(items[3]), 0.01)
+        Nodes_Loc_Score[protein]['t'] = max(float(items[2]), 0.01)
         Nodes_Loc_Score[protein]['t'] = -log(Nodes_Loc_Score[protein]['t'])
-        Nodes_Loc_Score[protein]['T'] = max(float(items[4]), 0.01)
+        Nodes_Loc_Score[protein]['T'] = max(float(items[3]), 0.01)
         Nodes_Loc_Score[protein]['T'] = -log(Nodes_Loc_Score[protein]['T'])
     Loc_Keys = Nodes_Loc_Score[protein].keys()  # ['1', 't', 'T']
 
