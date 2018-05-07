@@ -13,11 +13,11 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Input Files
 
 These files are positional arguments (the order matters). (ARCOMMENT: this is true right?)
-* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line contains 3 columns: tail, head, and weight (ARCOMMENT: at least 3 cols? Or exactly 3?). Edges are directed from tail to head.  The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". (ARCOMMENT: you need to unzip this file. Mention this.)
+* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line contains has to have at least 3 columns: tail, head, and weight. Edges are directed from tail to head. The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". You need to unzip this file first.
 
-* NODE_TYPES - A tab-delimited file denoting nodes as receptors or TRs. The first column is the node name and the second is the node type (receptor or TR). (ARCOMMENT: what if the node is not a receptor or TR? Does it need to be in this file?). You can find an example file for the Alpah6Beta4Integrin pathway in the Data folder under the name "Alpha6Beta4Integrin-nodes.txt"
+* NODE_TYPES - A tab-delimited file denoting nodes as receptors or TRs. The first column is the node name and the second is the node type (receptor, TR, or none). You can find an example file for the Alpah6Beta4Integrin pathway in the Data folder under the name "Alpha6Beta4Integrin-nodes.txt"
 
-* COM_PPI - A tab-delimited file that represents interactions with localization information.  It contains one undirected interaction per line (ARCOMMENT: what's the format?  A,B,compartment info?). We used the predictions from the ComPPI database; you can download the "Integrated protein-protein interaction dataset" for the "H. sapiens" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>. (ARCOMMENT need to download and unzip it.))
+* COM_PPI - A tab-delimited file that represents interactions with localization information. We used the predictions from the ComPPI database; you need to download the "Integrated protein-protein interaction dataset" for the "H. sapiens" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>, and then unzip it. The downloaded file contains one undirected interaction per line. Each line has 12 columns. We use the first (an interaction protein), fifth (the second protein of the interactions), and ninth (interaction score) columns.
 
 * NODE_LOC_SCORES - A tab-delimited file giving the localization scores per protein for the cellular compartments "ExtMem", "Cytosol", and "Nucleus". You can find an example file derived from the ComPPI database in the Data folder under the name "Protein_Localization_Scores.txt". (ARCOMMENT: how did you make this file? Was this file also downloaded from ComPPI?) (ARCOMMENT: after doing this, I would include isntructions about getting hte original file and parsing it.)
 
@@ -39,7 +39,6 @@ These arguments may be specified in any order. (ARCOMMENT: note if they are opti
 * Pathway_ranked_edges - A tab-delimited file for the edges within the reconstructed paths. Each edge will be given the order of the path within which it appeared for the first time.
 
 ## Toy Example
-(ARCOMMENT: your toy example relied on a directory structure, which wasn't needed, and was also missing a  few Data/ references. I've fixed - please check. )
 This example will compute 20,000 paths for the Alpha6Beta4 Integrin pathway and use the ComPPI information to reweight ties.  Move to the cloned directory (e.g. localized-pathlinker/) and call the following code in python2.7:
 
 ```
@@ -48,7 +47,6 @@ python Loc_PL_run.py -k 20000 -o example.out --write-paths Data/PathLinker_2018_
 
 where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI. 
 
-(ARCOMMENT: I couldn't run because it died with No moduled named PathLinker.)
 
 ## References
 
