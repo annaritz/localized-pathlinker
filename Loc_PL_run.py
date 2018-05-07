@@ -28,7 +28,12 @@ REQUIRED arguments:
     COM_PPI - A tab-delimited file with one undirected interaction per line. This file is a cellular
         compartment-sepcific interactome.
     
-    NODE_LOC_SCORES - 
+    NODE_LOC_SCORES - A tab-delimited file for the proteins localization scores with one node per line. Each line
+        has four columns:
+            1- Node (protein) ID.
+            2- Maximum localization score of Extracelluar and Membrane.
+            3- Localization score at the Cytosol.
+            4- Localization score at the Nucleus.
 
 
 '''
