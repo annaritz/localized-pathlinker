@@ -18,7 +18,7 @@ These files are positional arguments (the order matters).
 
 * COM_PPI - A tab-delimited file that represents interactions with localization information. We used the predictions from the ComPPI database; you need to download the "Integrated protein-protein interaction dataset" for the "H. sapiens" from the <a href="http://comppi.linkgroup.hu/downloads">ComPPI databasse</a>, and then unzip it. The downloaded file contains one undirected interaction per line. Each line has 12 columns. We use the first (an interaction protein), fifth (the second protein of the interaction), and ninth (interaction score) columns.
 
-* NODE_LOC_SCORES - A tab-delimited file giving the localization scores per protein for the cellular compartments "ExtMem", "Cytosol", and "Nucleus". You can find an example file derived from the ComPPI database in the Data folder under the name "Protein_Localization_Scores.txt". (ARCOMMENT: how did you make this file? Was this file also downloaded from ComPPI?) (ARCOMMENT: after doing this, I would include isntructions about getting hte original file and parsing it.)
+* NODE_LOC_SCORES - A tab-delimited file giving the proteins localization scores- one protein per line. Each line has four columns: protein ID, "ExtMem" localization score, "Cytosol" localization score, and "Nucleus" localization score. You can find an example file derived from the ComPPI database in the Data folder under the name "Protein_Localization_Scores.txt". This file was obtained using the python script "Nodes_Scores.py" available with the source codes. Read the required arguments in "Nodes_Scores.py" to know the needed files to derive the "Protein_Localization_Scores.txt" and how to obtain them.
 
 ## Other Arguments
 
