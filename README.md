@@ -52,7 +52,7 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 
 This work is currently under review. It is an extension of the method described in this paper:
 
-Ritz A, Poirel CL, Tegge AN, Sharp N, Simmons K, Powell A, Kale SD, Murali TM. Pathways on demand: automated reconstruction of human signaling networks. NPJ systems biology and applications. 2016 Mar 3;2:16002. (ARCOMMENT: Format this citation and add publisher URL).
+Ritz A, Poirel CL, Tegge AN, Sharp N, Simmons K, Powell A, Kale SD, and Murali TM. <a href="http://www.nature.com/articles/npjsba20162">Pathways on Demand: Automated Reconstruction of Human Signaling Networks</a>, *npj Systems Biology and Applications*, 2016,2:16002.
 
 The protein localization information comes from this paper:
 
