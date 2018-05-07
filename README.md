@@ -53,7 +53,7 @@ This work is currently under review. It is an extension of the method described 
 
 Ritz A, Poirel CL, Tegge AN, Sharp N, Simmons K, Powell A, Kale SD, and Murali TM, <a href="http://www.nature.com/articles/npjsba20162">Pathways on Demand: Automated Reconstruction of Human Signaling Networks</a>, *npj Systems Biology and Applications*, 2016,2:16002.
 
-
+\vspace{1cm}
 
 The protein localization information comes from this paper:
 
