@@ -12,7 +12,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Input Files
 
 These files are positional arguments (the order matters).
-* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line contains has to have at least 3 columns: tail, head, and weight. Edges are directed from tail to head. The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". You need to unzip this file first.
+* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line has to have at least 3 columns: tail, head, and weight. Edges are directed from tail to head. The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". You need to unzip this file first.
 
 * NODE_TYPES - A tab-delimited file denoting nodes as receptors or TRs. The first column is the node name and the second is the node type (receptor, TR, or none). You can find an example file for the Alpah6Beta4Integrin pathway in the Data folder under the name "Alpha6Beta4Integrin-nodes.txt"
 
