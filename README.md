@@ -57,4 +57,4 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 
 [2] Veres DV, Gyurkó DM, Thaler B, Szalay KZ, Fazekas D, Korcsmáros T, and Csermely P, <a href="https://academic.oup.com/nar/article/43/D1/D485/2435307">ComPPI: a cellular compartment-specific database for protein–protein interaction network analysis</a>, *Nucleic Acids Research*, 2015, 43, D1, D485–D493.
 
-* Resources used to build *PLNet_2*:
+* Resources used to build *$PLNet_2$*:
