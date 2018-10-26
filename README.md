@@ -66,6 +66,6 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 
 [5] Kandasamy K *et al.*, <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-1-r3">NetPath: a public resource of curated signal transduction pathways</a>, *Genome Biology*, 2010, 11, R3.
 
-[6] Kanehisa M, Furumichi M, Tanabe M, Sato Y, and Morishima K, <a href="https://academic.oup.com/nar/article/40/D1/D261/2903142">KEGG: new perspectives on genomes, pathways, diseases and drugs</a>, *Nucleic Acids Research*, 2017, 45, D1, D353–D361.
+[6] Kanehisa M, Furumichi M, Tanabe M, Sato Y, and Morishima K, <a href="https://academic.oup.com/nar/article/45/D1/D353/2605697">KEGG: new perspectives on genomes, pathways, diseases and drugs</a>, *Nucleic Acids Research*, 2017, 45, D1, D353–D361.
 
 [7] Paz A *et al.*, <a href="https://academic.oup.com/nar/article/39/suppl_1/D793/2507440">SPIKE: a database of highly curated human signaling pathways</a>, *Nucleic Acids Research*, 2011, 39, Issue suppl_1, D793–D799.
