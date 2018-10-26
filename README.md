@@ -58,7 +58,9 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 [2] Veres DV, Gyurkó DM, Thaler B, Szalay KZ, Fazekas D, Korcsmáros T, and Csermely P, <a href="https://academic.oup.com/nar/article/43/D1/D485/2435307">ComPPI: a cellular compartment-specific database for protein–protein interaction network analysis</a>, *Nucleic Acids Research*, 2015, 43, D1, D485–D493.
 
 * Resources used to build *PLNet<sub>2</sub>*:
+
 [3] Aranda B *et al.*, <a href="https://www.nature.com/articles/nmeth.1637">PSICQUIC and PSISCORE: accessing and scoring molecular interactions</a>, *Nature Methods*, 2011, 8, 528–529.
+
 [4] Hornbeck PV, Kornhauser JM, Tkachev S, Zhang B, Skrzypek E, Murray B, Latham V, and Sullivan M, <a href="https://academic.oup.com/nar/article/40/D1/D261/2903142">PhosphoSitePlus: a comprehensive resource for investigating the structure and function of experimentally determined post-translational modifications in man and mouse</a>, *Nucleic Acids Research*, 2012, 40, D1, D261–D270.
 [5] Kandasamy K *et al.*, <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-1-r3">NetPath: a public resource of curated signal transduction pathways</a>, *Genome Biology*, 2010, 11, R3.
 [6] Kanehisa M, Furumichi M, Tanabe M, Sato Y, and Morishima K, <a href="https://academic.oup.com/nar/article/40/D1/D261/2903142">KEGG: new perspectives on genomes, pathways, diseases and drugs</a>, *Nucleic Acids Research*, 2017, 45, D1, D353–D361.
