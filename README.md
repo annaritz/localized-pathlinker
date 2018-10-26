@@ -53,7 +53,7 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 [1] Ritz A, Poirel CL, Tegge AN, Sharp N, Simmons K, Powell A, Kale SD, and Murali TM, <a href="http://www.nature.com/articles/npjsba20162">Pathways on Demand: Automated Reconstruction of Human Signaling Networks</a>, *npj Systems Biology and Applications*, 2016,2:16002.
 
 
-** The protein localization information comes from this paper:**
+** The protein localization information comes from this paper**
 
 [2] Veres DV, Gyurkó DM, Thaler B, Szalay KZ, Fazekas D, Korcsmáros T, and Csermely P, <a href="https://academic.oup.com/nar/article/43/D1/D485/2435307">ComPPI: a cellular compartment-specific database for protein–protein interaction network analysis</a>, *Nucleic Acids Research*, 2015, 43, D1, D485–D493.
 
