@@ -12,7 +12,7 @@ For a signaling pathway of interest, this method identifies paths that connect p
 ## Input Files
 
 These files are positional arguments (the order matters).
-* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line has to have at least 3 columns: tail, head, and weight. Edges are directed from tail to head. The updated version of the PathLinker interactome, PLNet<sub>2</sub>, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". You need to unzip this file first.
+* NETWORK - A tab-delimited file that represents the directed, weighted interactome.  Each line has to have at least 3 columns: tail, head, and weight. Edges are directed from tail to head. The updated version of the PathLinker interactome, *PLNet<sub>2</sub>*, can be found in the Data folder under the name "PathLinker_2018_human-ppi-weighted-cap0_75.txt". You need to unzip this file first.
 
 * NODE_TYPES - A tab-delimited file denoting nodes as receptors or TRs. The first column is the node name and the second is the node type (receptor, TR, or none). You can find an example file for the Alpah6Beta4Integrin pathway in the Data folder under the name "Alpha6Beta4Integrin-nodes.txt"
 
@@ -57,4 +57,9 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 
 [2] Veres DV, Gyurkó DM, Thaler B, Szalay KZ, Fazekas D, Korcsmáros T, and Csermely P, <a href="https://academic.oup.com/nar/article/43/D1/D485/2435307">ComPPI: a cellular compartment-specific database for protein–protein interaction network analysis</a>, *Nucleic Acids Research*, 2015, 43, D1, D485–D493.
 
-* Resources used to build *$PLNet_2$*:
+* Resources used to build *PLNet<sub>2</sub>*:
+[3] Aranda B *et al.*, <a href="https://www.nature.com/articles/nmeth.1637">PSICQUIC and PSISCORE: accessing and scoring molecular interactions</a>, *Nature Methods*, 2011, 8, 528–529.
+[4] Hornbeck PV, Kornhauser JM, Tkachev S, Zhang B, Skrzypek E, Murray B, Latham V, and Sullivan M, <a href="https://academic.oup.com/nar/article/40/D1/D261/2903142">PhosphoSitePlus: a comprehensive resource for investigating the structure and function of experimentally determined post-translational modifications in man and mouse</a>, *Nucleic Acids Research*, 2012, 40, D1, D261–D270.
+[5] Kandasamy K *et al.*, <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-1-r3">NetPath: a public resource of curated signal transduction pathways</a>, *Genome Biology*, 2010, 11, R3.
+[6] Kanehisa M, Furumichi M, Tanabe M, Sato Y, and Morishima K, <a href="https://academic.oup.com/nar/article/40/D1/D261/2903142">KEGG: new perspectives on genomes, pathways, diseases and drugs</a>, *Nucleic Acids Research*, 2017, 45, D1, D353–D361.
+[7] Paz A *et al.*, <a href="https://academic.oup.com/nar/article/39/suppl_1/D793/2507440">SPIKE: a database of highly curated human signaling pathways</a>, *Nucleic Acids Research*, 2011, 39, Issue suppl_1, D793–D799.
