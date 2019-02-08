@@ -57,8 +57,16 @@ def DP_Breaking_Ties(Paths_tied, Nodes_Loc_Score, Loc_Keys):
                                                                   # compartments (Cyt, Nuc, and/or Mt) will remain zero.
         for i in range(1, len(path_nodes)):
             Prob_Table['1'][i] = Prob_Table['1'][i-1] + Nodes_Loc_Score[path_nodes[i]]['1']
-            Prob_Table['t'][i] = min(Prob_Table['1'][i-1], Prob_Table['t'][i-1]) + Nodes_Loc_Score[path_nodes[i]]['t']
-            Prob_Table['T'][i] = min(Prob_Table['t'][i-1], Prob_Table['T'][i-1]) + Nodes_Loc_Score[path_nodes[i]]['T']
+            
+            route1 = Prob_Table['1'][i-1] + Nodes_Loc_Score[path_nodes[i]]['1']
+            route2 = Prob_Table['1'][i-1] + Nodes_Loc_Score[path_nodes[i-1]]['t']
+            route3 = Prob_Table['t'][i-1]
+            Prob_Table['t'][i] = min(route1, route2, route3) + Nodes_Loc_Score[path_nodes[i]]['t']
+
+            route1 = Prob_Table['t'][i-1] + Nodes_Loc_Score[path_nodes[i]]['t']
+            route2 = Prob_Table['t'][i-1] + Nodes_Loc_Score[path_nodes[i-1]]['T']
+            route3 = Prob_Table['T'][i-1]
+            Prob_Table['T'][i] = min(route1, route2, route3) + Nodes_Loc_Score[path_nodes[i]]['T']
 
         path_score = exp(-Prob_Table['T'][i]) # score of the last protein inside the nucleus.
         path_temp = path.__add__([path_score])
