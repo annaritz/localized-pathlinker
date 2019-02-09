@@ -48,8 +48,10 @@ where <COMPPI_INTERACTIONS> is the interactions file downloaded from ComPPI.
 
 <!--- ## *PLNet<sub>2</sub>* Interactome -->
 
+<!---
 We built *PLNet<sub>2</sub>* from both physical molecular interaction data (BioGrid, DIP, InnateDB, IntAct, MINT, PhosphositePlus) and annotated signaling pathway databases (KEGG, NetPath, and SPIKE) [3-7]. *PLNet<sub>2</sub>* contains 17,168 nodes, 40,016 directed regulatory interactions, and 286,250 bidirected physical interactions, totaling 612,516 directed edges. We assigned interaction direction based on evidence of a directed enzymatic reaction (e.g., phosphorylation, dephosphorylation, ubiquitination) from any of the source databases.  Each interaction is supported by one or more types of experimental evidence (e.g. yeast two hybrid or co-immunoprecipitation) that are available as evidence codes from the data sources, and/or the name of the pathway database it is from. Edges are weighted using an evidence-based Bayesian approach that assigns higher confidence to an experiment type/pathway database if it identifies interacting proteins that participate in the same biological process [8]. Given a set *P* of positive edges and a set *N* of negative edges, the method estimates, for each evidence type *t*, a probability that *t* supports positive interactions. These probabilities are then combined for each interaction supported by (potentially multiple) evidence types to produce a final weight. We chose the GO term "regulation of signal transduction" to build a set of positive interactions that are likely related to signaling; this term includes "signal transduction" as a child GO term.
 Positives are edges whose nodes are both annotated with this term, and negatives are randomly selected edges whose nodes are not co-annotated to the term. We chose *|N|* = 10 x *|P|* negative edges. To lessen the influence of very highly-weighted edges, we apply a ceiling of 0.75 to all weights [8]. 
+-->
 
 ## References
 
@@ -62,7 +64,7 @@ Positives are edges whose nodes are both annotated with this term, and negatives
 
 [2] Veres DV, Gyurkó DM, Thaler B, Szalay KZ, Fazekas D, Korcsmáros T, and Csermely P, <a href="https://academic.oup.com/nar/article/43/D1/D485/2435307">ComPPI: a cellular compartment-specific database for protein–protein interaction network analysis</a>, *Nucleic Acids Research*, 2015, 43, D1, D485–D493.
 
-
+<!---
 * **Resources used to build *PLNet<sub>2</sub>*:**
 
 [3] Aranda B *et al.*, <a href="https://www.nature.com/articles/nmeth.1637">PSICQUIC and PSISCORE: accessing and scoring molecular interactions</a>, *Nature Methods*, 2011, 8, 528–529.
@@ -76,3 +78,4 @@ Positives are edges whose nodes are both annotated with this term, and negatives
 [7] Paz A *et al.*, <a href="https://academic.oup.com/nar/article/39/suppl_1/D793/2507440">SPIKE: a database of highly curated human signaling pathways</a>, *Nucleic Acids Research*, 2011, 39, Issue suppl_1, D793–D799.
 
 [8] Yeger-Lotem E *et al.*, <a href="https://www.nature.com/articles/ng.337">Bridging high-throughput genetic and transcriptional data reveals cellular responses to alpha-synuclein toxicity</a>, *Nature Genetics*, 2009, 41, 316–323.
+-->
